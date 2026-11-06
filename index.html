@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가고 싶은 여행지 보관함</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Firebase SDK (v9+ Compatibility Module) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🏖️ 가고 싶은 여행지 보관함</h1>
+  </header>
+
+  <main>
+    <!-- 컨트롤 영역: 지역 선택 & 보관함 보기 필터 -->
+    <section class="controls">
+      <div class="select-group">
+        <label for="areaSelect">지역 선택:</label>
+        <select id="areaSelect">
+          <option value="1">서울</option>
+          <option value="6">부산</option>
+          <option value="4">대구</option>
+          <option value="2">인천</option>
+          <option value="3">대전</option>
+          <option value="5">광주</option>
+          <option value="31">경기도</option>
+          <option value="39">제주도</option>
+        </select>
+        <button id="searchBtn">조회하기</button>
+      </div>
+
+      <div class="toggle-group">
+        <button id="viewAllBtn" class="active">전체 보기</button>
+        <button id="viewFavoritesBtn">❤️ 내 보관함 보기 (<span id="favCount">0</span>)</button>
+      </div>
+    </section>
+
+    <!-- 목록 표시 영역 -->
+    <section id="tourList" class="grid-container"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
