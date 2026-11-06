@@ -1,7 +1,7 @@
 // ==========================================
 // 1. 설정 정보 (본인의 정보로 변경하세요)
 // ==========================================
-const TOUR_API_KEY = "YOUR_TOUR_API_DECODING_KEY"; // TourAPI 원문 인증키 (Decoding)
+const TOUR_API_KEY = "ccb365c1b74b195ab9e40e0e1b33f1e3cfecc4a493866b744863644ce55c023d"; // TourAPI 원문 인증키 (Decoding)
 
 const firebaseConfig = {
   apiKey: "AIzaSyBUkDrTxQC_jfP8FmBu07DGP2nmVBclJ0Y",
