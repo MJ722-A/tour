@@ -51,7 +51,7 @@ favoritesRef.on("value", (snapshot) => {
 // ==========================================
 async function fetchTourData(areaCode) {
   // TourAPI 4.0 areaBasedList1 명세 사용
-  const baseUrl = "https://apis.data.go.kr/B551011/KorService1/areaBasedList1";
+  const baseUrl = "https://apis.data.go.kr/B551011/KorService2/areaBasedList2";
   const queryParams = [
     `serviceKey=${TOUR_API_KEY}`,
     `numOfRows=20`,
